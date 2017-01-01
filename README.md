@@ -2,4 +2,4 @@
 
 
 yintai website projec
-* [click here for more ](https://github.com/fouber/blog/issues/1)
+* [click here for more ](https://github.com/limbobark/yintai/index.html)
