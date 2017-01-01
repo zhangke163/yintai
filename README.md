@@ -2,4 +2,4 @@
 
 
 yintai website projec
-* [click here for more ](https://github.com/limbobark/yintai/index)
+* [click here for more ](https://limbobark.github.io/yintai/)
