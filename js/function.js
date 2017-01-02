@@ -15,7 +15,7 @@ function getClass(classname, obj) { //classname获取的类名obj传入的父类
     var objs = obj.getElementsByTagName("*"); //获取所有标签元素
     for (var i = 0; i < obj.length; i++) { //遍历获取的元素
       if (Check(arr[i].className, classname)) { //寻找符合类名的标签元素
-        arr.plus(objs[i]); //添加符合条件的元素到数组
+        arr.push(objs[i]); //添加符合条件的元素到数组
       }
     }
     return arr; //返回数组
@@ -421,3 +421,16 @@ function getCookie(key) {
 function removeCookie(key) {
   this.setCookie(key, '', -1);
 }
+/**
+ * 兼容的获取可视窗口对象
+ * @return {string}     cookie的value
+ */
+
+  function getWindow(){
+    document.documentElement.scrollTop=1;
+    if (document.documentElement.scrollTop==1) {
+      return document.documentElement;
+    }else{
+      return document.body;
+    }
+  } 
